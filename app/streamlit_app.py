@@ -24,13 +24,13 @@ except Exception as e:
     st.exception(e)
     locations = []
 
-# Sidebar with model highlights and expandable metadata
+# Sidebar information
 with st.sidebar:
     st.header("ℹ️ Model Info")
     st.markdown("""
-    **Stacked Regressor** combining **XGBoost** and **CatBoost**
+    Stacking-Based Ensemble Model Integrating **XGBoost** and **CatBoost**
 
-    ### 🔍 Highlights
+    ###  Highlights
     - Combines tree-based models for better generalization
     - Captures complex nonlinear relationships
     - Robust to outliers due to ensemble structure
@@ -95,8 +95,8 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Title and subtitle
-st.title("📊 Real Estate Price Predictor")
-st.subheader("🔍 Predict Bangalore House Prices with a Stacked AI Model")
+st.title("🏢 Real Estate Price Predictor")
+st.subheader("Predict House Prices in Bangalore")
 
 # Input form
 with st.form("prediction_form"):
@@ -104,13 +104,13 @@ with st.form("prediction_form"):
 
     col1, col2 = st.columns(2)
     with col1:
-        location = st.selectbox("📍 Location", options=locations)
-        bhk = st.number_input("🛏️ BHK (Bedrooms)", min_value=1, max_value=10, value=2)
+        location = st.selectbox(" Location", options=locations)
+        bhk = st.number_input(" BHK (Bedrooms)", min_value=1, max_value=10, value=2)
     with col2:
-        total_sqft = st.number_input("📐 Total Sqft", min_value=300.0, max_value=10000.0, value=1000.0)
-        bath = st.number_input("🛁 Bathrooms", min_value=1, max_value=5, value=2)
+        total_sqft = st.number_input(" Total Sqft", min_value=300.0, max_value=10000.0, value=1000.0)
+        bath = st.number_input(" Bathrooms", min_value=1, max_value=5, value=2)
 
-    submitted = st.form_submit_button("🔮 Predict Price")
+    submitted = st.form_submit_button("Predict Price")
 
 # Submit and prediction
 if submitted:
