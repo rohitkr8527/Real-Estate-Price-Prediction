@@ -158,9 +158,8 @@ streamlit run app.py
 
 ## Contact
 
-- **Author:** Rohit Kumar
-- **Email:** [rohitkr7518@example.com]
-- **GitHub:** [rohitkr8527](https://github.com/rohitkr8527)
+- [**Email** ](rohitkr7518@example.com)
+-  [**GitHub**](https://github.com/rohitkr8527)
 
 
 
