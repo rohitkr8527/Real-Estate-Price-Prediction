@@ -5,7 +5,7 @@
 ![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/Streamlit-%23FF4B4B.svg?style=for-the-badge&logo=streamlit&logoColor=white)
 
-A comprehensive machine learning project for predicting real estate prices using regression algorithms.
+A comprehensive machine learning project for predicting real estate prices using advanced regression algorithms.
 
 ---
 
@@ -24,7 +24,6 @@ A comprehensive machine learning project for predicting real estate prices using
 - [Feature Importance](#feature-importance)
 - [Data](#data)
 - [Contributing](#contributing)
-- [License](#license)
 - [Contact](#contact)
 
 ---
@@ -47,15 +46,17 @@ This project aims to predict real estate prices using advanced regression techni
 
 ## Project Structure
 
+```
 Real-Estate-Price-Prediction/
-├── app/ # Web application code (Flask, Streamlit)
-├── data/ # Raw and processed datasets
-├── logs/ # Log files
-├── model_artifacts/ # Saved models and artifacts
-├── notebooks/ # Jupyter notebooks for exploration and training
-├── reports/ # Model evaluation reports and visualizations
-├── requirements.txt # Python dependencies
-└── .gitignore # Files and directories to ignore
+├── app/                 # Web application code (Flask, Streamlit)
+├── data/                # Raw and processed datasets
+├── logs/                # Log files
+├── model_artifacts/     # Saved models and artifacts
+├── notebooks/           # Jupyter notebooks for exploration and training
+├── reports/             # Model evaluation reports and visualizations
+├── requirements.txt     # Python dependencies
+└── .gitignore           # Files and directories to ignore
+```
 
 ---
 
@@ -63,17 +64,23 @@ Real-Estate-Price-Prediction/
 
 1. **Clone the repository:**
 
+```bash
 git clone https://github.com/rohitkr8527/Real-Estate-Price-Prediction.git
 cd Real-Estate-Price-Prediction
+```
 
 2. **Create a virtual environment (recommended):**
 
+```bash
 python -m venv venv
-source venv/bin/activate # On Windows: venv\Scripts\activate
+source venv/bin/activate      # On Windows: venv\Scripts\activate
+```
 
 3. **Install dependencies:**
-   
+
+```bash
 pip install -r requirements.txt
+```
 
 ---
 
@@ -81,29 +88,79 @@ pip install -r requirements.txt
 
 ### Jupyter Notebook
 
-- **Explore and train models using Jupyter notebooks in the `notebooks/` directory.**
-- **Start Jupyter:**
+* Explore and train models using Jupyter notebooks in the `notebooks/` directory.
+* Start Jupyter:
+
+```bash
+jupyter notebook
+```
 
 ### Web App (Flask)
 
-- **Navigate to the `app/flask_app/` directory.**
-- **Run the Flask app:**
-- **Open `http://127.0.0.1:5000` in your browser.**
+* Navigate to the `app/flask_app/` directory.
+* Run the Flask app:
+
+```bash
+python app.py
+```
+
+* Open `http://127.0.0.1:5000` in your browser.
 
 ### Streamlit App
 
-- **Navigate to the `app/streamlit_app/` directory.**
-- **Run the Streamlit app:**
+* Navigate to the `app/streamlit_app/` directory.
+* Run the Streamlit app:
+
+```bash
+streamlit run app.py
+```
 
 ### API Usage
 
-- **Start the Flask API server as above.**
-- **Send a POST request to `/predict` with a JSON payload:**
+* Start the Flask API server as above.
+* Send a POST request to `/predict` with a JSON payload:
+
+```json
 {
-"area": 1500,
-"bedrooms": 3,
-"bathrooms": 2,
-"location_score": 8
+  "area": 1500,
+  "bedrooms": 3,
+  "bathrooms": 2,
+  "location_score": 8
 }
+```
+
+---
+## Model Performance
+
+| Model         | RMSE      | R² Score |
+| ------------- | --------- | -------- |
+| XGBoost       | 19.55     | 0.6663   |
+| CatBoost      | 19.99     | 0.6508   |
+| Stacked Model | 17.41     | 0.7243   |
+
+---
+## Data
+
+- **Raw data:** `data/raw/`
+- **Processed data:** `data/processed/`
+
+---
+
+## Contributing
+
+1. **Fork the repository.**
+2. **Create a new branch (`git checkout -b feature/your-feature`).**
+3. **Commit your changes (`git commit -am 'Add some feature'`).**
+4. **Push to the branch (`git push origin feature/your-feature`).**
+5. **Open a pull request.**
+
+---
+
+## Contact
+
+- **Author:** Rohit Kumar
+- **Email:** [rohitkr7518@example.com]
+- **GitHub:** [rohitkr8527](https://github.com/rohitkr8527)
+
 
 
