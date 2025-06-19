@@ -2,7 +2,7 @@
 
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![Machine Learning](https://img.shields.io/badge/Machine%20Learning-%23FF6F00.svg?style=for-the-badge&logo=scikitlearn&logoColor=white)
-![Flask](https://img.shields.io/badge/Flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/Streamlit-%23FF4B4B.svg?style=for-the-badge&logo=streamlit&logoColor=white)
 
 A comprehensive machine learning project for predicting real estate prices using regression algorithms.
@@ -31,19 +31,79 @@ A comprehensive machine learning project for predicting real estate prices using
 
 ## Overview
 
-This project aims to predict real estate prices using advanced regression techniques. It provides a complete workflow from data preprocessing to model deployment, supporting multiple machine learning algorithms (Linear Regression, Random Forest, XGBoost).
+This project aims to predict real estate prices using advanced regression techniques. It provides a complete workflow from data preprocessing to model deployment, supporting multiple machine learning algorithms (Final model is stacking of **XGBoost** and **CatBoost**).
 
 ---
 
 ## Features
 
-- **Multiple algorithms**: Linear Regression, Random Forest, XGBoost.
+- **Multiple algorithms**: Linear Regression,Decision Tree, Random Forest,ExtraTree,AdaBoost,Gradient, XGBoost,CatBoost.
 - **Comprehensive data preprocessing**: Missing value handling, outlier detection, feature engineering.
-- **Web app deployment**: Flask and Streamlit interfaces for user interaction.
-- **API support**: RESTful API for integration with other systems.
+- **Web app deployment**: FastAPI and Streamlit interfaces for user interaction.
+- **API support**: Used FastAPI for API endpoints.
 - **Model evaluation**: Performance metrics and visualization.
 
 ---
 
 ## Project Structure
+
+Real-Estate-Price-Prediction/
+├── app/ # Web application code (Flask, Streamlit)
+├── data/ # Raw and processed datasets
+├── logs/ # Log files
+├── model_artifacts/ # Saved models and artifacts
+├── notebooks/ # Jupyter notebooks for exploration and training
+├── reports/ # Model evaluation reports and visualizations
+├── requirements.txt # Python dependencies
+└── .gitignore # Files and directories to ignore
+
+---
+
+## Installation
+
+1. **Clone the repository:**
+
+git clone https://github.com/rohitkr8527/Real-Estate-Price-Prediction.git
+cd Real-Estate-Price-Prediction
+
+2. **Create a virtual environment (recommended):**
+
+python -m venv venv
+source venv/bin/activate # On Windows: venv\Scripts\activate
+
+3. **Install dependencies:**
+   
+pip install -r requirements.txt
+
+---
+
+## Usage
+
+### Jupyter Notebook
+
+- **Explore and train models using Jupyter notebooks in the `notebooks/` directory.**
+- **Start Jupyter:**
+
+### Web App (Flask)
+
+- **Navigate to the `app/flask_app/` directory.**
+- **Run the Flask app:**
+- **Open `http://127.0.0.1:5000` in your browser.**
+
+### Streamlit App
+
+- **Navigate to the `app/streamlit_app/` directory.**
+- **Run the Streamlit app:**
+
+### API Usage
+
+- **Start the Flask API server as above.**
+- **Send a POST request to `/predict` with a JSON payload:**
+{
+"area": 1500,
+"bedrooms": 3,
+"bathrooms": 2,
+"location_score": 8
+}
+
 
