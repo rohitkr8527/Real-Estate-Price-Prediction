@@ -31,10 +31,10 @@ with st.sidebar:
     Stacking-Based Ensemble Model Integrating **XGBoost** and **CatBoost**
 
     ###  Highlights
-    - Combines tree-based models for better generalization
-    - Captures complex nonlinear relationships
-    - Robust to outliers due to ensemble structure
-    - Tuned with cross-validation for optimal performance
+    - **Boosted Accuracy**: Combines two top models for better predictions  
+    - **Handles Real-World Data**: Works well with mixed and messy data  
+    - **Consistent Results**: Stable even with noisy or unseen inputs  
+    - **Business-Ready**: Cross-validated for reliable performance  
     """)
 
     if st.button("📄 Show Model Metadata"):
