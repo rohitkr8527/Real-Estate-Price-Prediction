@@ -118,7 +118,7 @@ streamlit run app.py
 ```
 ## UI Preview
 
-![App UI](reports/streamlit_ui.png)
+![App UI](reports/Streamlit_ui.png)
 
 ---
 ## Model Performance
