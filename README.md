@@ -17,7 +17,6 @@ A comprehensive machine learning project for predicting real estate prices using
 - [Installation](#installation)
 - [Usage](#usage)
   - [Jupyter Notebook](#jupyter-notebook)
-  - [Web App (Flask)](#web-app-flask)
   - [Streamlit App](#streamlit-app)
   - [API Usage](#api-usage)
 - [Model Performance](#model-performance)
@@ -94,17 +93,6 @@ pip install -r requirements.txt
 ```bash
 jupyter notebook
 ```
-
-### Web App (Flask)
-
-* Navigate to the `app/flask_app/` directory.
-* Run the Flask app:
-
-```bash
-python app.py
-```
-
-* Open `http://127.0.0.1:5000` in your browser.
 
 ### Streamlit App
 
