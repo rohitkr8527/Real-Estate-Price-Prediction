@@ -20,7 +20,7 @@ A comprehensive machine learning project for predicting real estate prices using
   - [Streamlit App](#streamlit-app)
   - [API Usage](#api-usage)
 - [Model Performance](#model-performance)
-- [Feature Importance](#feature-importance)
+- [UI Preview](#UI-Preview)
 - [Data](#data)
 - [Contributing](#contributing)
 - [Contact](#contact)
@@ -116,6 +116,9 @@ streamlit run app.py
   "location_score": 8
 }
 ```
+## UI Preview
+
+![App UI](reports/streamlit_ui.png)
 
 ---
 ## Model Performance
