@@ -129,8 +129,8 @@ streamlit run app.py
 | XGBoost       | 19.55     | 0.6663   |
 | CatBoost      | 19.99     | 0.6508   |
 | Stacked Model | 19.47     | 0.6689   |
-
-Stacked Model was then trained on full dataset 
+*Stacked Model was then trained on full dataset 
+ 
 ---
 ## Data
 
