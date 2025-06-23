@@ -128,7 +128,7 @@ streamlit run app.py
 | ------------- | --------- | -------- |
 | XGBoost       | 19.55     | 0.6663   |
 | CatBoost      | 19.99     | 0.6508   |
-| Stacked Model | 17.41     | 0.7243   |
+| Stacked Model | 19.47     | 0.6689   |
 
 ---
 ## Data
