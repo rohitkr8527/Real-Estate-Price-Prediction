@@ -122,7 +122,7 @@ streamlit run app.py
 ![App UI](reports/Streamlit_ui.png)
 
 ---
-## Model Performance
+## Model Performance(On Test Set)
 
 | Model         | RMSE      | R² Score |
 | ------------- | --------- | -------- |
@@ -130,6 +130,7 @@ streamlit run app.py
 | CatBoost      | 19.99     | 0.6508   |
 | Stacked Model | 19.47     | 0.6689   |
 
+Stacked Model was then trained on full dataset 
 ---
 ## Data
 
