@@ -28,10 +28,10 @@ except Exception as e:
 with st.sidebar:
     st.header("ℹ️ Model Info")
     st.markdown("""
-    Stacking-Based Ensemble Model Integrating **XGBoost** and **CatBoost**
+    Stacking-Based Ensemble Model Integrating **XGBoost**,**CatBoost** and **Multi-Layer Perceptron (MLP)**
 
     ###  Highlights
-    - **Boosted Accuracy**: Combines two top models for better predictions  
+    - **Boosted Accuracy**: Combines three top models for better predictions  
     - **Handles Real-World Data**: Works well with mixed and messy data  
     - **Consistent Results**: Stable even with noisy or unseen inputs  
     - **Business-Ready**: Cross-validated for reliable performance  
