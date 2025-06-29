@@ -1,0 +1,29 @@
+{
+    "CatBoost": {
+        "depth": 7,
+        "iterations": 200,
+        "learning_rate": 0.1
+    },
+    "XGBoost": {
+        "learning_rate": 0.1,
+        "max_depth": 7,
+        "n_estimators": 200
+    },
+    "MLPRegressor": {
+        "activation": "relu",
+        "hidden_layer_sizes": [
+            50
+        ],
+        "learning_rate_init": 0.01
+    },
+    "RandomForest": {
+        "max_depth": null,
+        "min_samples_split": 5,
+        "n_estimators": 200
+    },
+    "LightGBM": {
+        "learning_rate": 0.1,
+        "max_depth": 10,
+        "n_estimators": 200
+    }
+}
