@@ -30,13 +30,13 @@ A comprehensive machine learning project for predicting real estate prices using
 
 ## Overview
 
-This project aims to predict real estate prices using advanced regression techniques. It provides a complete workflow from data preprocessing to model deployment, supporting multiple machine learning algorithms (Final model is stacking of **XGBoost** and **CatBoost**).
+This project aims to predict real estate prices using advanced regression techniques. It provides a complete workflow from data preprocessing to model deployment, supporting multiple machine learning algorithms (Final model is stacking of **Random Forest**, **CatBoost** and **Multi-Layer Perceptron**).
 
 ---
 
 ## Features
 
-- **Multiple algorithms**: Linear Regression,Decision Tree, Random Forest,ExtraTree,AdaBoost,Gradient, XGBoost,CatBoost.
+- **Multiple algorithms**: Linear Regression, Decision Tree, Random Forest, ExtraTree,     AdaBoost, GradientBoost, XGBoost, CatBoost, LightGBM, Neural Network.
 - **Comprehensive data preprocessing**: Missing value handling, outlier detection, feature engineering.
 - **Web app deployment**: FastAPI and Streamlit interfaces for user interaction.
 - **API support**: Used FastAPI for API endpoints.
@@ -124,14 +124,15 @@ streamlit run app.py
 ---
 ## Model Performance(On Test Set)
 
-| Model         | RMSE      | R² Score |
-| ------------- | --------- | -------- |
-| XGBoost       | 19.55     | 0.6663   |
-| CatBoost      | 19.99     | 0.6508   |
-| Stacked Model | 19.47     | 0.6689   |
+| Model         | RMSE    | R² Score | MAE     |
+|---------------|---------|----------|---------|
+| Random Forest | 19.870  | 0.6502   | 13.090  |
+| CatBoost      | 19.545  | 0.6616   | 13.888  |
+| MLP           | 19.556  | 0.6612   | 13.6586 |
+| **Stack**     | **18.783** | **0.6875** | **12.9730** |
 
 
-*Stacked Model was then trained on full dataset 
+Stacked Model was then trained on full dataset 
  
 ---
 ## Data
