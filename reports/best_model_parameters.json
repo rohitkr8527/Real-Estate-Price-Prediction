@@ -1,11 +1,11 @@
 {
     "CatBoost": {
         "depth": 7,
-        "iterations": 200,
+        "iterations": 300,
         "learning_rate": 0.1
     },
     "XGBoost": {
-        "learning_rate": 0.1,
+        "learning_rate": 0.01,
         "max_depth": 7,
         "n_estimators": 200
     },
