@@ -28,7 +28,7 @@ except Exception as e:
 with st.sidebar:
     st.header("ℹ️ Model Info")
     st.markdown("""
-    Stacking-Based Ensemble Model Integrating **Random Forest**,**CatBoost** and **Multi-Layer Perceptron (MLP)**
+    Stacking-Based Ensemble Model Integrating **CatBoost**, **Random Forest** and  **Multi-Layer Perceptron (MLP)**
 
     ###  Highlights
     - **Boosted Accuracy**: Combines three top models for better predictions  
